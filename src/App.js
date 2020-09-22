@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyles } from "./global";
 
+import ReactDOM from "react-dom";
 import styled from "styled-components";
 import "./index.css";
 import "./Title.css";
@@ -14,9 +15,21 @@ const GridLayout = styled.div`
   grid-template-areas:
     "nav nav nav"
     "asideLeft main asideRight"
-    "footer footer footer";
-  grid-auto-rows: 1fr 8fr 1fr auto;
-  grid-template-columns: 1fr 5fr 2fr auto 1fr;
+    "leftFooter footer rightFooter";
+  grid-template-rows: 1fr 8fr 1fr 1fr;
+  grid-template-columns: 1fr 5fr 2fr 1fr 1fr;
+  @media screen and (max-width: 500px) {
+    grid-template-areas:
+      "nav"
+      "nav"
+      "nav"
+      "asideLeft"
+      "main"
+      "asideRight"
+      "leftFooter"
+      "footer"
+      "rightFooter";
+  }
 `;
 
 const Nav = styled.nav`
@@ -81,19 +94,23 @@ function App() {
               Click to change to Dark or Light Mode{" "}
             </button>{" "}
             <h2>
-              Hey there, my name is Adam Aslan.I am very interested in the
+              Hey there, my name is Adam Aslan. I am very interested in the
               intersection of art, design, and front end development with a
               focus on creating art via code.{" "}
             </h2>{" "}
           </Main>{" "}
           <AsideRight>
             <p>
-              This is my custom font Utopia_Seriff. <br> </br> You can have it
-              for free!
-              <a href="./fonts/utopia_seriff.ttf" download>
-                {" "}
-              </a>{" "}
-              <u> here </u> <a />
+              This is my custom font Utopia_Seriff. <br /> You can have it for{" "}
+              <span> </span>
+              <a
+                download="utopia_seriff.ttf"
+                target="_blank"
+                href="./fonts/utopia_seriff.ttf"
+              >
+                free!
+              </a>
+              <a />
             </p>{" "}
           </AsideRight>{" "}
           <Footer>
