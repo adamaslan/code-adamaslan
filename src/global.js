@@ -7,22 +7,24 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+p {
+
+  font-size: 30px;
+}
   body {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    padding: 0;
-    margin: 10;
+    
     font-family: "utopia_seriff", BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     transition: all 0.25s linear;
   }
 
   footer {
-    position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
@@ -33,10 +35,16 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   button {
-    display: block;
-    font: "utopia_seriff";
+ 
+    font-family: "utopia_seriff";
+    background-color: red;
+    font-size: 24px;
+    border-radius: 25%;
+    border: 2px solid yellow;
   }
-
+  .button:hover {
+  background-color: red;
+  color: white;
   a {
     color: ${({ theme }) => theme.text};
   }
