@@ -17,21 +17,10 @@ const GridLayout = styled.div`
     "leftFooter footer rightFooter";
   grid-template-rows: 1fr 8fr 1fr auto 1fr;
   grid-template-columns: 1fr 5fr 2fr 1fr 1fr;
+  
+  
   @media screen and (max-width: 600px) {
-    float: none;
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-      "nav"
-      "nav2"
-      "nav3"
-      "asideLeft"
-      "main"
-      "asideRight1"
-      
-      "footer footer footer";
-  grid-auto-rows: 1fr 8fr 1fr auto;
-  grid-template-columns: 1fr 5fr 2fr auto 1fr;
+   flex-direction: column;
   }
 `;
 

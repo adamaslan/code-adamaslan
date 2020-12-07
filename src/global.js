@@ -12,10 +12,6 @@ p {
   font-size: 30px;
 }
   body {
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
