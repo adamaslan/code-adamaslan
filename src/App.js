@@ -20,7 +20,14 @@ const GridLayout = styled.div`
   
   
   @media screen and (max-width: 600px) {
-   flex-direction: column;
+    grid-template-areas:
+     "nav2" 
+     "main" 
+    "asideLeft""   asideRight";
+  grid-template-rows: 1fr 8fr 1fr auto 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: auto 1fr  1fr;
+  
+  
   }
 `;
 
@@ -112,7 +119,13 @@ function App() {
               focus on creating art via code.{" "}
             </h2>{" "}
 
-            <br></br><br></br><h1> Thanks for visiting! </h1>{" "}
+            <br></br><br></br><h1> <a
+                download="utopia_seriff.ttf"
+                target="_blank"
+                href="https://www.linkedin.com/in/adamaslan/"
+              >
+                Visit my linked in page :)
+              </a> </h1>{" "}
           </Main>{" "}
           <AsideRight>
             <p>
@@ -128,7 +141,7 @@ function App() {
               <a />
             </p>{" "}
           </AsideRight>{" "}
-       <Footer></Footer>
+       <Footer><h1> Thanks for visiting! </h1></Footer>
         </GridLayout>{" "}
       </>{" "}
     </ThemeProvider>
