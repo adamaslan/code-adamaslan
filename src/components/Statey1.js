@@ -5,7 +5,7 @@ const Statey1 = () => {
   const [art, setArt] = useState(1);
   const [siblingsNum, setSiblingsNum] = useState(1);
 
-  const handleArt = () => setArt(art + 1 + "hotdogs");
+  const handleArt = () => setArt(art + 1);
   const handleSiblingsNum = () => setSiblingsNum(siblingsNum + 1);
 
   return (
