@@ -4,12 +4,11 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyles } from "./global";
 
-
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 import "./index.css";
 import Title from "./Title.css";
-import Statey1 from "./components/Statey1"
+import Statey1 from "./components/Statey1";
 
 const GridLayout = styled.div`
   display: grid;
@@ -19,17 +18,14 @@ const GridLayout = styled.div`
     "leftFooter Footer rightFooter";
   grid-template-rows: 1fr 8fr 1fr auto 1fr;
   grid-template-columns: 1fr 5fr 2fr 1fr 1fr;
-  
-  
+
   @media screen and (max-width: 600px) {
     grid-template-areas:
-     "nav2" 
-     "main" 
-    "asideLeft""   asideRight";
-  grid-template-rows: 1fr 8fr 1fr auto 1fr 1fr 1fr 1fr 1fr ;
-  grid-template-columns: auto 1fr  1fr;
-  
-  
+      "nav2"
+      "main"
+      "asideLeft" "   asideRight";
+    grid-template-rows: 1fr 8fr 1fr auto 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr 1fr;
   }
 `;
 
@@ -41,7 +37,6 @@ const Nav = styled.nav`
 const Nav2 = styled.nav`
   grid-area: nav2;
   font-size: calc(20px + 0.25em);
- 
 `;
 const Nav3 = styled.nav`
   grid-area: nav3;
@@ -83,7 +78,7 @@ const AsideRight1 = styled.aside`
   justify-content: end;
 `;
 
-//
+//put code here for timer
 
 // The function that toggles between themes
 function App() {
@@ -95,7 +90,6 @@ function App() {
       setTheme("light");
     }
   };
-
 
   // Return the layout based on the current theme
   return (
@@ -121,16 +115,19 @@ function App() {
               intersection of art, design, and front end development with a
               focus on creating art via code.{" "}
             </h2>{" "}
-
             <br></br>
             <Statey1 />
-            <br></br><h1> <a
+            <br></br>
+            <h1>
+              {" "}
+              <a
                 download="utopia_seriff.ttf"
                 target="_blank"
                 href="https://www.linkedin.com/in/adamaslan/"
               >
                 Visit my linked in page :)
-              </a> </h1>{" "}
+              </a>{" "}
+            </h1>{" "}
           </Main>{" "}
           <AsideRight>
             <p>
@@ -146,7 +143,9 @@ function App() {
               <a />
             </p>{" "}
           </AsideRight>{" "}
-       <Footer><h1> Thanks for visiting! </h1></Footer>
+          <Footer>
+            <h1> Thanks for visiting! </h1>
+          </Footer>
         </GridLayout>{" "}
       </>{" "}
     </ThemeProvider>
