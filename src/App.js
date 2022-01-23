@@ -91,7 +91,7 @@ function App() {
     }
   };
 
-  // Return the layout based on the current theme
+  // Return the layout based on the current theme (needed)
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
@@ -118,6 +118,7 @@ function App() {
             <br></br>
             <Statey1 />
             <br></br>
+            //add timer here to spring
             <h1>
               {" "}
               <a
