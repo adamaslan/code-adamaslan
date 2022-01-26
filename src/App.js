@@ -9,6 +9,7 @@ import styled from "styled-components";
 import "./index.css";
 import Title from "./Title.css";
 import Statey1 from "./components/Statey1";
+import MeTimer from "./components/MeTimer";
 
 const GridLayout = styled.div`
   display: grid;
@@ -118,7 +119,7 @@ function App() {
             <br></br>
             <Statey1 />
             <br></br>
-            //add timer here to spring
+            <MeTimer />
             <h1>
               {" "}
               <a
