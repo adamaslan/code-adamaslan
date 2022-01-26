@@ -20,7 +20,7 @@ const GridLayout = styled.div`
     grid-template-areas:
       "nav2"
       "main"
-      "asideLeft" "   asideRight";
+      "asideLeft" "   asideRight1";
     grid-template-rows: 1fr 8fr 1fr auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: auto 1fr 1fr;
   }
@@ -121,6 +121,7 @@ function App() {
               <a
                 download="utopia_seriff.ttf"
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/adamaslan/"
               >
                 Visit my linked in page :)
@@ -135,6 +136,8 @@ function App() {
                 download="utopia_seriff.ttf"
                 target="_blank"
                 href="./fonts/utopia_seriff.ttf"
+                rel="noopener noreferrer"
+                aria-describedby="font download"
               >
                 free!
               </a>
