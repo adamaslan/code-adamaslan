@@ -1,13 +1,8 @@
-// App.js
-import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyles } from "./global";
-
-import ReactDOM from "react-dom";
 import styled from "styled-components";
 import "./index.css";
-import Title from "./Title.css";
 import Statey1 from "./components/Statey1";
 import MeTimer from "./components/MeTimer";
 
