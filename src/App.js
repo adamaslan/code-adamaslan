@@ -20,7 +20,7 @@ const GridLayout = styled.div`
     grid-template-areas:
       "nav2"
       "main"
-      "asideLeft" "   asideRight1";
+      "asideLeft" "   asideRight";
     grid-template-rows: 1fr 8fr 1fr auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: auto 1fr 1fr;
   }
@@ -66,14 +66,14 @@ const Footer = styled.footer`
 `;
 
 // For Mobile
-const AsideRight1 = styled.aside`
-  grid-area: asideRight1;
-  font-weight: bolder;
-  writing-mode: vertical-rl;
-  transform: rotate(-80deg);
-  border-right: 18px solid;
-  justify-content: end;
-`;
+// const AsideRight1 = styled.aside`
+//   grid-area: asideRight1;
+//   font-weight: bolder;
+//   writing-mode: vertical-rl;
+//   transform: rotate(-80deg);
+//   border-right: 18px solid;
+//   justify-content: end;
+// `;
 
 //put code here for timer
 
@@ -141,7 +141,6 @@ function App() {
               >
                 free!
               </a>
-              <a />
             </p>{" "}
           </AsideRight>{" "}
           <Footer>
