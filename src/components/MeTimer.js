@@ -6,11 +6,12 @@ function MeTimer() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>react-timer-hook </h1>
-      <p>Current Time Demo</p>
+      <h1>The Time Now is</h1>
+
       <div style={{ fontSize: "100px" }}>
         <span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
         <span>{ampm}</span>
+        <p>May this imaginary force be with you</p>
       </div>
     </div>
   );
