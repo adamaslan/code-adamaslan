@@ -10,19 +10,22 @@ import MeTimer from "./components/MeTimer";
 const GridLayout = styled.div`
   display: grid;
   grid-template-areas:
-    "nav nav2 nav3"
-    "asideLeft main asideRight"
-    "leftFooter Footer rightFooter";
-  grid-template-rows: 1fr 8fr 1fr auto 1fr;
-  grid-template-columns: 1fr 5fr 2fr 1fr 1fr;
+    "nav . nav2 ."
+    "asideLeft . main asideRight"
+    " .  .Footer rightFooter";
+  grid-template-rows: 7rem 1fr . 1fr;
+  grid-template-columns: 5rem 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 8fr 1fr auto 1fr;
+  grid-template-columns: 1fr 5fr 2fr 1fr 1fr; */
 
   @media screen and (max-width: 600px) {
     grid-template-areas:
       "nav2"
       "main"
-      "asideLeft" "   asideRight";
-    grid-template-rows: 1fr 8fr 1fr auto 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: auto 1fr 1fr;
+      "."
+      "asideLeft" "asideRight";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
@@ -52,11 +55,15 @@ const AsideRight = styled.aside`
   writing-mode: vertical-rl;
   transform: rotate(-20deg);
   border-right: 18px solid;
+  padding: 2rem;
+  margin: 2rem;
 `;
 const Main = styled.main`
   border-top: 15px solid;
   border-bottom: 15px solid;
   grid-area: main;
+  padding: 2rem;
+  margin: 2rem;
 `;
 const Footer = styled.footer`
   border-top: 20px solid;
@@ -124,7 +131,7 @@ function App() {
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/adamaslan/"
               >
-                Visit my linked in page :)
+                {" --> "}Visit my linked in page :)
               </a>{" "}
             </h1>{" "}
           </Main>{" "}
