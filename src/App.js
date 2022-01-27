@@ -10,9 +10,9 @@ import MeTimer from "./components/MeTimer";
 const GridLayout = styled.div`
   display: grid;
   grid-template-areas:
-    "nav . nav2 ."
-    "asideLeft . main asideRight"
-    " .  .Footer rightFooter";
+    "nav nav2 nav2 nav3 "
+    "asideLeft main main asideRight"
+    " . . Footer rightFooter";
   grid-template-rows: 7rem 1fr . 1fr;
   grid-template-columns: 5rem 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 8fr 1fr auto 1fr;
@@ -33,6 +33,8 @@ const Nav = styled.nav`
   grid-area: nav;
   font-size: calc(20px + 0.25em);
   border-right: 10px solid;
+  transform: rotate(10deg);
+  margin: 1rem;
 `;
 const Nav2 = styled.nav`
   grid-area: nav2;
@@ -42,12 +44,15 @@ const Nav3 = styled.nav`
   grid-area: nav3;
   font-size: calc(20px + 0.25em);
   border-right: 10px solid;
+  transform: rotate(20deg);
+  padding: 1rem;
 `;
 const AsideLeft = styled.aside`
   grid-area: asideLeft;
 
   transform: rotate(-5deg);
   border-right: 25px solid;
+  margin: 3rem;
 `;
 const AsideRight = styled.aside`
   grid-area: asideRight;
@@ -106,7 +111,7 @@ function App() {
             <h1> Adam Aslan - {"> "}Front - End Developer </h1>{" "}
           </Nav2>{" "}
           <Nav3>
-            <h1> </h1>{" "}
+            <h1> {" - --> "}Hey!</h1>{" "}
           </Nav3>{" "}
           <AsideLeft> {} </AsideLeft>{" "}
           <Main>
