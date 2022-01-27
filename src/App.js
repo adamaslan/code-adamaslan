@@ -17,13 +17,15 @@ const GridLayout = styled.div`
   grid-template-columns: 5rem 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 8fr 1fr auto 1fr;
   grid-template-columns: 1fr 5fr 2fr 1fr 1fr; */
-
   @media screen and (max-width: 600px) {
     grid-template-areas:
+      "nav3"
       "nav2"
       "main"
       "."
-      "asideLeft" "asideRight";
+      "asideLeft"
+      "asideRight"
+      "Footer";
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
   }
@@ -49,7 +51,6 @@ const Nav3 = styled.nav`
 `;
 const AsideLeft = styled.aside`
   grid-area: asideLeft;
-
   transform: rotate(-5deg);
   border-right: 25px solid;
   margin: 3rem;
