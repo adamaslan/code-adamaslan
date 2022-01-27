@@ -13,8 +13,10 @@ const GridLayout = styled.div`
     "nav nav2 nav3"
     "asideLeft main asideRight"
     "leftFooter Footer rightFooter";
-  grid-template-rows: 1fr 8fr 1fr auto 1fr;
-  grid-template-columns: 1fr 5fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 8fr 1fr auto 1fr;
+  grid-template-columns: 1fr 5fr 2fr 1fr 1fr; */
 
   @media screen and (max-width: 600px) {
     grid-template-areas:
@@ -124,7 +126,7 @@ function App() {
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/adamaslan/"
               >
-                Visit my linked in page :)
+                <span> - - - - - ------></span> Visit my linked in page :)
               </a>{" "}
             </h1>{" "}
           </Main>{" "}
