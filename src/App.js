@@ -12,7 +12,7 @@ const GridLayout = styled.div`
   grid-template-areas:
     "nav nav2 nav2 nav3 "
     "asideLeft main main asideRight"
-    " . . Footer rightFooter";
+    " . 1fr  footer auto";
   grid-template-rows: 7rem 1fr . 1fr;
   grid-template-columns: 5rem 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 8fr 1fr auto 1fr;
@@ -22,12 +22,12 @@ const GridLayout = styled.div`
       "nav3"
       "nav2"
       "main"
-      "."
       "asideLeft"
+      "nav"
       "asideRight"
-      "Footer";
+      "footer";
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -74,7 +74,7 @@ const Main = styled.main`
 const Footer = styled.footer`
   border-top: 20px solid;
   grid-area: footer;
-  font-size: calc(10px + 0.25em);
+  font-size: 1rem;
   border-bottom: 40px solid;
 `;
 
