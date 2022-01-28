@@ -26,6 +26,13 @@ p {
     display: block;
   }
 
+  ${
+    "" /* a {
+    color: ${({ theme }) => theme.text};
+    
+  } */
+  }
+
   button {
  
     font-family: "utopia_seriff";
@@ -36,8 +43,6 @@ p {
   }
   .button:hover {
   background-color: red;
-  color: white;
-  a {
-    color: ${({ theme }) => theme.text};
-  }
+  color: white;}
+
 `;

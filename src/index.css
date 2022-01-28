@@ -10,3 +10,13 @@ code {
   font-family: "utopia_seriff";
   src: url("./fonts/utopia_seriff.ttf");
 }
+
+a:link {
+  color: red;
+}
+a:hover {
+  color: rgb(86, 176, 250);
+}
+a:visited {
+  color: rgb(240, 83, 11);
+}
