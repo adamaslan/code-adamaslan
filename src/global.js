@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
 p {
 
-  font-size: 30px;
+  font-size: 2rem;
 }
   body {
     
@@ -20,11 +20,7 @@ p {
     transition: all 0.25s linear;
   }
 
-  footer {
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+ 
 
   small {
     display: block;
@@ -34,7 +30,7 @@ p {
  
     font-family: "utopia_seriff";
     background-color: red;
-    font-size: 24px;
+    font-size: 2rem;
     border-radius: 25%;
     border: 2px solid yellow;
   }
