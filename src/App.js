@@ -45,7 +45,8 @@ const Nav2 = styled.nav`
 const Nav3 = styled.nav`
   grid-area: nav3;
   font-size: calc(20px + 0.25em);
-  border-right: 10px solid;
+  border-top: 4px solid;
+  border-color: grey;
   transform: rotate(20deg);
   padding: 1rem;
 `;
@@ -122,8 +123,8 @@ function App() {
             </button>{" "}
             <h2>
               Hey there, my name is Adam Aslan. I am very interested in the
-              intersection of art, design, and front end development with a
-              focus on creating art via code.{" "}
+              intersection of art, design, and frontend development with a focus
+              on creating art via code.{" "}
             </h2>{" "}
             <br></br>
             <Statey1 />
