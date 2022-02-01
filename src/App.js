@@ -12,7 +12,7 @@ const GridLayout = styled.div`
   grid-template-areas:
     "nav nav2 nav2 nav3 "
     "asideLeft main main asideRight"
-    " . 1fr  footer auto";
+    " . 1fr auto footer";
   grid-template-rows: 7rem 1fr . 1fr;
   grid-template-columns: 5rem 1fr 1fr 1fr;
 
@@ -72,10 +72,12 @@ const Main = styled.main`
   margin: 2rem;
 `;
 const Footer = styled.footer`
-  border-top: 20px solid;
+  border-top: 50px solid;
   grid-area: footer;
   font-size: 1rem;
-  border-bottom: 40px solid;
+  border-left: 20px solid;
+  justify-content: right;
+  text-align: left;
 `;
 
 // For Mobile
