@@ -15,8 +15,7 @@ const GridLayout = styled.div`
     " . 1fr  footer auto";
   grid-template-rows: 7rem 1fr . 1fr;
   grid-template-columns: 5rem 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr 8fr 1fr auto 1fr;
-  grid-template-columns: 1fr 5fr 2fr 1fr 1fr; */
+
   @media screen and (max-width: 600px) {
     grid-template-areas:
       "nav3"
