@@ -111,7 +111,10 @@ function App() {
         <GridLayout>
           <Nav />
           <Nav2>
-            <h1> Adam Aslan - {"> "}Front - End Developer </h1>{" "}
+            <h1>
+              {" "}
+              Adam Timur Aslan <br /> {"=> "}Frontend Developer{" "}
+            </h1>{" "}
           </Nav2>{" "}
           <Nav3>
             <h1> {" - --> "}Hey!</h1>{" "}
@@ -123,9 +126,10 @@ function App() {
               Click here to change to Dark or Light Mode{" "}
             </button>{" "}
             <h2>
-              Hey there, my name is Adam Aslan. I am very interested in the
-              intersection of art, design, and frontend development with a focus
-              on creating art via code.{" "}
+              Hey there, my name is Adam Timur Aslan. I am based in Brooklyn and
+              very interested in the intersection of art, design, and front end
+              development with a focus on creating art via code for over 8
+              years.{" "}
             </h2>{" "}
             <br></br>
             <Statey1 />
