@@ -7,10 +7,19 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-p {
 
+  h2 {
   font-size: 2rem;
 }
+h1 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
   body {
     
     background: ${({ theme }) => theme.body};
