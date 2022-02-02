@@ -10,11 +10,12 @@ const Statey1 = () => {
 
   return (
     <div>
-      <p>I think this website is art: {art} </p>
-      <p>I think this site is chill {siblingsNum} </p>
-
+      <p>I think this website is art: {art} </p>{" "}
       <div>
         <button onClick={handleArt}>Art + 1</button>
+      </div>
+      <p>I think this site is chill {siblingsNum} </p>
+      <div>
         <button onClick={handleSiblingsNum}>Cool + 1</button>
       </div>
     </div>

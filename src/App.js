@@ -32,18 +32,18 @@ const GridLayout = styled.div`
 
 const Nav = styled.nav`
   grid-area: nav;
-  font-size: calc(20px + 0.25em);
+  font-size: 1rem;
   border-right: 10px solid;
   transform: rotate(10deg);
   margin: 1rem;
 `;
 const Nav2 = styled.nav`
   grid-area: nav2;
-  font-size: calc(20px + 0.25em);
+  font-size: 1rem;
 `;
 const Nav3 = styled.nav`
   grid-area: nav3;
-  font-size: calc(20px + 0.25em);
+  font-size: 1rem;
   border-top: 4px solid;
   border-color: grey;
   transform: rotate(20deg);
@@ -57,7 +57,7 @@ const AsideLeft = styled.aside`
 `;
 const AsideRight = styled.aside`
   grid-area: asideRight;
-  font-weight: bolder;
+
   writing-mode: vertical-rl;
   transform: rotate(-20deg);
   border-right: 18px solid;
@@ -117,7 +117,7 @@ function App() {
             </h1>{" "}
           </Nav2>{" "}
           <Nav3>
-            <h1> {" - --> "}Hey!</h1>{" "}
+            <h2> {" - --> "}Hey!</h2>{" "}
           </Nav3>{" "}
           <AsideLeft> {} </AsideLeft>{" "}
           <Main>
@@ -125,17 +125,16 @@ function App() {
             <button onClick={toggleTheme}>
               Click here to change to Dark or Light Mode{" "}
             </button>{" "}
-            <h2>
+            <p>
               Hey there, my name is Adam Timur Aslan. I am based in Brooklyn and
-              very interested in the intersection of art, design, and front end
-              development with a focus on creating art via code for over 8
-              years.{" "}
-            </h2>{" "}
-            <br></br>
+              have been very interested in the intersection of art, design, and
+              front end development with a focus on creating art via code for
+              over 8 years.{" "}
+            </p>{" "}
             <Statey1 />
             <br></br>
             <MeTimer />
-            <h1>
+            <h2>
               {" "}
               <a
                 download="utopia_seriff.ttf"
@@ -145,7 +144,7 @@ function App() {
               >
                 {" --> "}Visit my linked in page :)
               </a>{" "}
-            </h1>{" "}
+            </h2>{" "}
           </Main>{" "}
           <AsideRight>
             <p>

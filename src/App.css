@@ -1,19 +1,8 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: grid;
@@ -22,32 +11,27 @@
   justify-content: center;
   font-size: 2rem;
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-button {
+/* button {
   font-family: "utopia_seriff";
-}
-
+} */
+/* 
 @font-face {
   font-family: "utopia_seriff";
   src: local("utopia_seriff"), url("./fonts/utopia_seriff.ttf");
-}
-
+} */
+/* 
 h2 {
   font-size: 2rem;
 }
 h1 {
   font-size: 3rem;
 }
+p {
+  font-size: 1rem;
+} */
