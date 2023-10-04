@@ -127,8 +127,8 @@ function App() {
             </button>{" "}
             <p>
               Hey there, my name is Adam Timur Aslan. I am based in Brooklyn and
-              have been very interested in the intersection of art, design, and
-              front end development with a focus on creating art via code for
+              have been very interested in all things 3d art, music, and
+              full stack development with a focus on creating art via code for
               over 8 years.{" "}
             </p>{" "}
             <Statey1 />
