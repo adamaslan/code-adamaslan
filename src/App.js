@@ -143,7 +143,7 @@ function App() {
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/adamaslan/"
               >
-                {" --> "}Visit my linked in page :)
+                {" --> "}Please visit my linkedin page :)
               </a>{" "}
             </h2>{" "}
             <h2>Play Some Good Ol' Tic Tac Toe</h2>
