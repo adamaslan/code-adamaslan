@@ -6,6 +6,7 @@ import styled from "styled-components";
 import "./index.css";
 import Statey1 from "./components/Statey1";
 import MeTimer from "./components/MeTimer";
+import TicTacToe from "./components/Tictac";
 
 const GridLayout = styled.div`
   display: grid;
@@ -145,6 +146,8 @@ function App() {
                 {" --> "}Visit my linked in page :)
               </a>{" "}
             </h2>{" "}
+            <h2>Play Some Good Ol' Tic Tac Toe</h2>
+            <TicTacToe />
           </Main>{" "}
           <AsideRight>
             <p>
@@ -163,6 +166,8 @@ function App() {
           </AsideRight>{" "}
           <Footer>
             <h1> Thanks for visiting! </h1>
+           
+           
           </Footer>
         </GridLayout>{" "}
       </>{" "}
