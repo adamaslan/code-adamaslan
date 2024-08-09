@@ -11,7 +11,7 @@ function MeTimer() {
       <div style={{ fontSize: "2rem" }}>
         <p>
           {" "}
-          May this imaginary force, known as time, be with you {"=> "}{" "}
+          Just in case you wanted to know the current time: {"=> "}{" "}
           <span>{formatTime(hours)}</span>:<span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
           <span>{ampm}</span>
         </p>

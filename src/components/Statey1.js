@@ -20,13 +20,14 @@ const Statey1 = () => {
     }
   };
 
+ 
   const updateCounters = async (newArt, newSiblingsNum) => {
-    await supabase.from("counters").update({
-      counter_1: newArt,
-      counter_2: newSiblingsNum,
-    }).eq('id', 1); // Assuming there's only one row with id 1
+    await supabase
+      .from("counters")
+      .update({ counter_1: newArt, counter_2: newSiblingsNum })
+      .eq('id', 1); // Assuming there's only one row with id 1
   };
-
+   
   const handleArt = () => {
     const newArt = art + 1;
     setArt(newArt);
