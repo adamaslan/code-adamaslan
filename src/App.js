@@ -7,7 +7,7 @@ import "./index.css";
 import Statey1 from "./components/Statey1";
 import MeTimer from "./components/MeTimer";
 import TicTacToe from "./components/Tictac";
-
+import Randomizer from "./components/Randomizer";
 const GridLayout = styled.div`
   display: grid;
   grid-template-areas:
@@ -165,6 +165,11 @@ function App() {
             </p>{" "}
           </AsideRight>{" "}
           <Footer>
+            <h2>
+
+<Randomizer />
+            </h2>
+            <h1>- - - - - - - - - - -</h1>
             <h1> Thanks for visiting! </h1>
            
            
