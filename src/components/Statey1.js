@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient("https://uhhueyrgffyxinaqihzm.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVoaHVleXJnZmZ5eGluYXFpaHptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjMwNjEwMjIsImV4cCI6MjAzODYzNzAyMn0.fym8kDcGfMiDx2hcI-yxzrZQzsnk342A-9XDsPP_b3A");
+
+
+
+const supabaseUrl = import.meta.env.React_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.React_SUPABASE_ANON_KEY;
+console.log("hello world!");
+console.log('Supabase URL:', supabaseUrl);
+console.log('Supabase Anon Key:', supabaseAnonKey);
+
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 const Statey1 = () => {
   const [art, setArt] = useState(1);
